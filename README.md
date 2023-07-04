@@ -40,13 +40,13 @@ To run the code in this repository, ensure you have the following:
     ```bash
    echo "OPENAI_API_KEY=your_api_key_goes_here!" > .env
     ```
-    
-- Run the app
+
+## Usage
 
     ```bash
     python3 app.py
     ```
-    
+
 - Open your browser and go to http://localhost:5000
 
 ## Docker, if you prefer to a different virtual environment.
@@ -94,19 +94,6 @@ To run the code in this repository, ensure you have the following:
     pytest
     ```
 - Open your browser and go to http://localhost:5000
-
-
-## Installation
-    
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-    ```bash
-    python3 app.py
-    ```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

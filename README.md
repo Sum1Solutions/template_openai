@@ -41,62 +41,24 @@ To run the code in this repository, ensure you have the following:
    echo "OPENAI_API_KEY=<ReplaceThisPartWithYourAPI>" > .env
     ```
 
-## Usage
+## Usage (via CLI)
 
-    ```bash
+```bash
     python3 app.py
-    ```
+```
+-App.py is a command-line that connects to OpenAI and ensures the connection is functioning.
+-App2.py is a command-line tool to prompt for information and returns data from the model.
 
+```bash
+    python3 app2.py
+```
+
+## Usage (via Browser)
+
+App3.py is browser tool (of app2) that prompts for a question.
+
+```bash
+    python3 app3.py
+ ```
 - Open your browser and go to http://localhost:5000
-
-## Docker, if you prefer to a different virtual environment.
-- Build the image
-
-    ```bash
-    docker build -t template_openai .
-    ```
-- Run the container
-
-    ```bash
-    docker run -d -p 5000:5000 template_openai
-    ```
-- Open your browser and go to http://localhost:5000
-
-
-
-## Testing
-
-- Clone the repo
-- Create a virtual environment
-
-    ```bash
-    python3 -m venv venv
-    ```
-- Activate the virtual environment
-
-    ```bash
-    source venv/bin/activate
-    ```
-- Install the requirements
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-- Create a .env file in the root directory and add the following
-
-    ```bash
-    OPENAI_API_KEY=<your_api_key>
-    ```
-- Run the tests
-
-    ```bash
-    pytest
-    ```
-- Open your browser and go to http://localhost:5000
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 

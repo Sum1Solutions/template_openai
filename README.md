@@ -20,7 +20,7 @@ To run the code in this repository, ensure you have the following:
 - Create a virtual environment
 
     ```bash
-    python3 -m venv myenv
+    python3 -m venv env
     ```
 
 - Activate the virtual environment (so the required files don't mess with your own system's files)
@@ -50,7 +50,6 @@ To run the code in this repository, ensure you have the following:
 - Open your browser and go to http://localhost:5000
 
 ## Docker, if you prefer to a different virtual environment.
-
 - Build the image
 
     ```bash

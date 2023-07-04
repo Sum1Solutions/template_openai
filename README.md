@@ -1,6 +1,6 @@
 # template_openai
 
- The core of an app to use OpenAI's Language Model API. The code uses the OpenAI Python library and the dotenv package for environment variable management.
+The core code to use OpenAI's Language Model API. The code uses the OpenAI Python library and the dotenv package for environment variable management.
 
 ## Pre-requisites
 
@@ -9,13 +9,12 @@ To run the code in this repository, ensure you have the following:
 - Python 3.x installed on your system
 - An OpenAI API key, which you can get from openai.com
 
-
 ## Setup
 
 - Clone the repo
 
     ```bash
-    git clone
+    git clone https://github.com/Sum1Solutions/template_openai.git
     ```
 
 - Create a virtual environment
@@ -24,31 +23,33 @@ To run the code in this repository, ensure you have the following:
     python3 -m venv myenv
     ```
 
-- Activate the virtual environment
+- Activate the virtual environment (so the required files don't mess with your own system's files)
 
     ```bash
     source venv/bin/activate
     ```
 
-- Install the requirements
+- Install the various libraries and modules this app requires
 
     ```bash
     pip install -r requirements.txt
     ```
 
-- Create a .env file in the root directory and add the following
+- Create a .env file with your own secret key (i.e., your <your_api_key> from OpenAI)
 
     ```bash
-    OPENAI_API_KEY=<your_api_key>
+   echo "OPENAI_API_KEY=your_api_key_goes_here!" > .env
     ```
+    
 - Run the app
 
     ```bash
     python3 app.py
     ```
+    
 - Open your browser and go to http://localhost:5000
 
-## Docker
+## Docker, if you prefer to a different virtual environment.
 
 - Build the image
 
@@ -63,36 +64,6 @@ To run the code in this repository, ensure you have the following:
 - Open your browser and go to http://localhost:5000
 
 
-## Development
-
-- Clone the repo
-- Create a virtual environment
-
-    ```bash
-    python3 -m venv venv
-    ```
-- Activate the virtual environment
-
-    ```bash
-    source venv/bin/activate
-    ```
-- Install the requirements
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-- Create a .env file in the root directory and add the following
-
-    ```bash
-    OPENAI_API_KEY=<your_api_key>
-    ```
-- Run the app
-
-    ```bash
-    python3 app.py
-    ```
-
-- Open your browser and go to <http://localhost:5000>
 
 ## Testing
 

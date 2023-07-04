@@ -1,7 +1,7 @@
-# This is more like step 1 app to get this first stuff understood.
 import os
 import openai
 from dotenv import load_dotenv
+import streamlit as st
 
 # Load variables from .env file into environment
 load_dotenv()
@@ -27,6 +27,15 @@ def run_chat_completion():
     chat_completion_result = make_chat_completion_request()
     return chat_completion_result
 
-if __name__ == "__main__":
+# Create Streamlit app
+def main():
+    st.title("Chat Completion")
+
+    # Run chat completion
     chat_completion_result = run_chat_completion()
-    print(chat_completion_result)
+
+    # Display result
+    st.write(chat_completion_result)
+
+if __name__ == "__main__":
+    main()

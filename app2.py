@@ -1,3 +1,4 @@
+# This is more like test app 2 to get this next stuff better understood.
 import os
 import openai
 from dotenv import load_dotenv

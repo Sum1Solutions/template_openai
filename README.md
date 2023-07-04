@@ -7,7 +7,7 @@ The core code to use OpenAI's Language Model API. The code uses the OpenAI Pytho
 To run the code in this repository, ensure you have the following:
 
 - Python 3.x installed on your system
-- An OpenAI API key, which you can get from openai.com
+- An OpenAI API key, which you can get from [OpenAI](https://openai.com).
 
 ## Setup
 
@@ -38,7 +38,7 @@ To run the code in this repository, ensure you have the following:
 - Create a .env file with your own secret key (i.e., your <your_api_key> from OpenAI)
 
     ```bash
-   echo "OPENAI_API_KEY=your_api_key_goes_here!" > .env
+   echo "OPENAI_API_KEY=<ReplaceThisPartWithYourAPI>" > .env
     ```
     
 - Run the app

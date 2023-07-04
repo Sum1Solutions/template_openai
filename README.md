@@ -26,7 +26,7 @@ To run the code in this repository, ensure you have the following:
 - Activate the virtual environment (so the required files don't mess with your own system's files)
 
     ```bash
-    source venv/bin/activate
+    source env/bin/activate
     ```
 
 - Install the various libraries and modules this app requires
